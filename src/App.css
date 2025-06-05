@@ -1,0 +1,1241 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* navbar ku adutha carousel kaana css */
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+}
+
+.carousel-caption h3 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+button:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+
+/* styles/App.css */
+.about-section {
+  background-color: #f3fefb;
+  overflow: hidden;
+}
+
+.about-image {
+  transform: translateY(0);
+  animation: bounce 3s ease-in-out infinite;
+  max-width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover 
+.about-image:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  animation: fadeInRight 1.2s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* slanting image kaana css */
+.slanted-image-left {
+  transform: rotate(-5deg);
+  border-radius: 10px;
+}
+
+.slanted-image-right {
+  transform: rotate(5deg);
+  border-radius: 10px;
+}
+
+.header-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+}
+
+
+/* navbar kaana css */
+.top-bar {
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: black !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #b48c65 !important;
+}
+
+svg {
+  cursor: pointer;
+}
+
+
+
+
+/* eco card kaana css with carousel */
+/* 
+.eco-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.eco-carousel-container {
+  max-width: 1000px; 
+  width: 100%;
+}
+
+.eco-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+
+.eco-card {
+  margin: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.eco-card:hover {
+  transform: scale(1.04);
+}
+
+ /* .product-img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+ }  
+
+.eco-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #d4edda;
+  color: #155724;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.eco-title-text {
+  font-size: 13px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.eco-rating {
+  font-size: 12px;
+  color: orange;
+}
+
+.eco-reviews {
+  font-size: 12px;
+  color: gray;
+  margin-left: 4px;
+}
+
+.eco-price {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.eco-old-price {
+  font-size: 12px;
+  margin-left: 6px;
+  text-decoration: line-through;
+  color: #888;
+}
+
+.eco-btn {
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 4px 12px;
+  width: 100%;
+  border-radius: 20px;
+} */
+
+
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Card styling */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Hover effect - change image */
+/* .card:hover .card-img-top {
+  content: url('/images/hover.jpg'); 
+} */
+
+/* Card title and text */
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Button styling */
+button {
+  min-width: 100px;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* footer oda css */
+.footer {
+  background-color: #4a7b3f;
+  color: #fff;
+  padding: 40px 0;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e1e1e1;
+}
+
+h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+  color: #dcdcdc;
+}
+
+.footer-bottom {
+  border-top: 1px solid #628d58;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.agency-name {
+  font-weight: bold;
+  color: #000;
+}
+
+.social-icons svg {
+  margin-right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+}
+
+/* Floating chat and WhatsApp icons oda css */
+.floating-icons {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.float-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.whatsapp {
+  color: #25D366;
+}
+
+.chat-icon-wrapper {
+  position: relative;
+}
+
+.chat {
+  color: #34a853;
+}
+
+.chat-badge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background-color: #ff3b3b;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+}
+
+
+
+.card .fa-star,
+.card .fa-star-half-alt,
+.card .fa-star-o {
+  margin-right: 2px;
+}
+
+
+/* sustain oda css */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.sustainable-section {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.sustainable-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.sustainable-icon {
+  font-size: 48px;
+}
+
+.sustainable-text {
+  font-size: 1.1rem;
+  color: #000;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+.sustainable-separator {
+  font-size: 2rem;
+  color: #648252;
+  margin: 0 20px;
+}
+
+/* last acrd oda css */
+
+.card-img-container {
+  position: relative;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #cde4d2;
+  color: #2f5e3f;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-title-custom {
+  font-size: 1rem;
+}
+
+.rating-stars {
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.price del {
+  color: #999;
+  margin-left: 8px;
+}
+
+/* quick add oda css */
+
+.carousel-card-wrapper .carousel-control-prev,
+.carousel-card-wrapper .carousel-control-next {
+  filter: invert(100%);
+}
+
+.carousel-card-wrapper .carousel-item {
+  padding: 20px;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* PRODUCT CAROUSEL ODA CSS */
+.product-card-wrapper {
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.add-to-cart-btn {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-card:hover .add-to-cart-btn {
+  opacity: 1;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  z-index: 10;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.left-arrow {
+  left: -30px;
+}
+
+.right-arrow {
+  right: -30px;
+}
+
+/* media oda css */
+.media-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem; 
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.contact-form {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.contact-heading-container {
+  padding: 20px 0; 
+  text-align: center; 
+}
+
+.contact-heading {
+ 
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+font-weight: 700; 
+font-size: 48px; 
+
+}
+
+.mobo{
+  font-family: 'Playfair Display', serif;
+font-weight: 700; 
+font-size: 24px;
+
+}
+.d-flex  {
+  margin-top: -20px;
+  margin-right: -100px;
+}
+
+.p{
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-size: 70px;
+  font-size: 24px;
+}
+.bold{
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* ABOUT ODA CSS */
+
+.philosophy-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0 50px;
+}
+
+.philosophy-heading {
+  font-family: 'Playfair Display', serif; 
+  font-weight: 700; 
+  font-size: 48px;
+  text-transform: uppercase; /* Caps aagu */
+  margin-bottom: 30px;
+}
+
+.philosophy-text {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+
+/* .thenga-model-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0 60px;
+}
+
+.thenga-model-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.thenga-model-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  color: #333;
+}
+
+.thenga-model-list {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+} */
+
+.thenga-model-section {
+  padding: 0 60px;
+}
+
+.thenga-model-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.thenga-model-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  color: #333;
+}
+
+.process-list {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+
+.sustainable-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0 60px;
+}
+
+.sustainable-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.sustainable-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.sustainable-description p {
+  margin-bottom: 20px;
+}
+
+h2{
+  font-family: 'Playfair Display', serif;
+
+}
+
+.team-desc {
+  font-family: SF-Body-font;
+  font-size: 14px;
+  color: #555;
+}
+ 
+
+
+.faq-question {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+.faq-answer.open {
+  max-height: 300px;
+  opacity: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.faq-item {
+  margin-bottom: 20px;
+  cursor: pointer;
+  padding-right: 100px; 
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease;
+  padding-left: 10px;
+}
+
+.answer.open {
+  max-height: 200px;
+  padding-top: 10px;
+}
+
+/* /gift oda css */
+
+.gift-section {
+  font-family: 'Playfair Display', serif;
+}
+
+.gift-heading {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.gift-subheading {
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 650px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.gift-card {
+  max-width: 360px;
+  min-height: 360px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 15px; 
+}
+
+.gift-card:hover {
+  transform: translateY(-5px);
+}
+
+.gift-image {
+  height: 160px;
+  object-fit: cover;
+}
+
+.gift-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+  color: #000;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: #F2B300;
+}
+
+.enquire-btn {
+  background-color: #c2a17e;
+  border: none;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.enquire-btn:hover {
+  background-color: #a88c6b;
+}
+
+
+
+/*  gift Responsive kaana css */
+@media (max-width: 992px) {
+  .gift-card {
+    min-height: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gift-card {
+    min-height: 300px;
+  }
+  .gift-image {
+    height: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gift-card {
+    min-height: 280px;
+  }
+  .gift-image {
+    height: 120px;
+  }
+}
+
+.bbb{
+  text-align: center;
+}
+
+ /* gift section carousel */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600;700&display=swap');
+
+.gift-section {
+  background: linear-gradient(120deg, #f9f5f0, #e5d9c5);
+  font-family: 'Open Sans', sans-serif;
+  color: #4d3b2b;
+}
+
+.headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #603e26;
+  margin-bottom: 20px;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  color: #3a2c20;
+  margin-bottom: 30px;
+}
+
+.quote-button {
+  background-color: #8c5c2b;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+}
+
+.quote-button:hover {
+  background-color: #a26a30;
+  color: white;
+}
+
+.gift-image {
+  max-width: 100%;
+  border-radius: 10px;
+  height: 380px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.news-section {
+  font-family: 'Playfair Display', serif;
+}
+
+.section-title {
+  font-weight: 700;
+}
+
+.breadcrumb {
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.vivo{
+  text-align: center;
+}
+
+.news-card {
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.news-desc {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  font-size: 0.9rem;
+  color: #555;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+
+
+/* Wrap image panirka  */
+.news-image-wrapper {
+  overflow: hidden;
+  margin-bottom: 1rem; /* space between image and content ku*/
+}
+
+/* Image zoom-in effect */
+.news-image-wrapper img {
+  transform: scale(1.1);
+  transition: transform 1s cubic-bezier(0, 1, 0.5, 1);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.news-card:hover .news-image-wrapper img {
+  transform: scale(1);
+}
+
+
+/* products oda css */
+
+.product-page {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.category-text {
+  color: #008000;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-title {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.rating-section {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.review-count {
+  font-size: 0.85rem;
+  margin-left: 5px;
+  color: #555;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  color: #444;
+}
+
+.price-section .price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.qty-input {
+  width: 70px;
+}
+
+.delivery-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.box-contents h5 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.box-contents ul {
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.thumbnail-row {
+  overflow-x: auto;
+}
+
+.thumbnail-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.thumbnail-img:hover {
+  border: 2px solid #aaa;
+}
+
+.thumbnail-img.active {
+  border: 2px solid #000;
+}
+
+/* LOGIN KU */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.JJJ {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: x-large;
+}
+.LLL{
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: medium;
+}
+.KKK{
+  font-family: 'Playfair Display', serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+}
+.NNN{
+  font-family: 'Playfair Display', serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* REGISTER ODA CSS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.form-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.custom-input {
+  border: 1px solid #1b3d1d;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.custom-register-btn {
+  background-color: #a68063;
+  color: #1b3d1d;
+  border: none;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.custom-login-btn {
+  border: 1px solid #a68063;
+  border-radius: 999px;
+  color: #1b3d1d;
+  background-color: white;
+  font-weight: 500;
+}
+
+.small-text {
+  font-size: 0.9rem;
+}
+/* fb oda css  */
+.nav-tabs .nav-link.active {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  font-weight: 500;
+}
+.nav-tabs .nav-link {
+  color: #555;
+}
+/* diwali product css  */
+.fade-touch-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.75s ease-in-out;
+}
+
+.fade-effect {
+  animation: fadeInOut 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* kitchen oda css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.kitchen-container {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.kitchen-heading {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.kitchen-breadcrumb {
+  margin-bottom: 1.5rem;
+}
+
+.product-card {
+  border: none;
+  height: 100%;
+}
+
+.product-card-body {
+  padding: 0.75rem;
+}
+
+.product-title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.discount-badge {
+  background-color: #28a745; /* Bootstrap green or any shade of green */
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 0.25rem;
+}
+.rating-reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  color: #ffa500;
+}
+
+.review-text {
+  margin-left: 0.5rem;
+  color: #6c757d;
+  font-size: 13px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 0.5rem;
+}
+
+.old-price {
+  font-size: 13px;
+  color: #999;
+}
+
+.kitchen-breadcrumb{
+
+  justify-content: center;
+}
+
+.gaba{
+  display: flex;
+  text-align: center;
+  padding-left: 200px;
+  margin: 20px;
+}

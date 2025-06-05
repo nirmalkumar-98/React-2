@@ -1,0 +1,45 @@
+
+
+
+
+
+.top-bar {
+  background-color: #c4a17a;
+  color: white;
+  font-size: 0.85rem;
+  padding: 0.3rem 0;
+  margin-top: 3px;
+}
+
+.navbar-logo {
+  height: 70px;
+  width: 80px;
+  padding-top: 5px;
+  margin-left: 100px;
+}
+
+.main-nav .nav-link {
+  color: black !important;
+  font-weight: 500;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  white-space: nowrap; /* wrapping nadakathu */
+  margin-right: 10px;
+ 
+}
+
+.main-nav {
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+

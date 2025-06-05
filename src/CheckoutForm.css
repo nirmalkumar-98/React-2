@@ -1,0 +1,59 @@
+.checkout-container {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    max-width: 600px;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .input-field {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .checkbox-label {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  .shipping-card,
+  .payment-card {
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .payment-note {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .radio-label {
+    font-weight: 500;
+  }
+  
+  .payment-description {
+    font-size: 13px;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  .paynow-btn {
+    background-color: #0d6832;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .knk{
+     font-family: 'Playfair Display', serif;
+     font-size: 30px;
+  }
